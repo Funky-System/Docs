@@ -1,0 +1,162 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Minimachine
+  product: Minimachine
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Introduction
+    output: web
+    folderitems:
+    - title: Landing Page
+      url: /minimachine_landing.html
+      output: web
+    - title: About the Documentation
+      url: /minimachine_aboutdocs.html
+      output: web
+  
+  - title: Getting Started
+    output: web, pdf
+    folderitems:
+    - title: Overview
+      url: /minimachine_gettingstarted.html
+      output: web, pdf
+    - title: What is Minimachine?
+      url: /minimachine_whatis.html
+      output: web, pdf
+    - title: Install Minimachine
+      url: /minimachine_install.html
+      output: web, pdf
+    - title: Playing a Game
+      url: /minimachine_using.html
+      output: web, pdf
+
+  - title: Programming Guide
+    output: web, pdf
+    folderitems:
+    - title: Overview
+      url: /minimachine_programmingguide.html
+      output: web, pdf
+    - title: "Tutorial: 1 - Hello World"
+      url: /minimachine_tut1.html
+      output: web, pdf
+    - title: "Tutorial: 2 - Variables and Logic"
+      url: /minimachine_tut2.html
+      output: web, pdf
+    - title: "Tutorial: 3 - Drawing with Pixels"
+      url: /minimachine_tut3.html
+      output: web, pdf
+    - title: "Tutorial: 4 - Sprites"
+      url: /minimachine_tut4.html
+      output: web, pdf
+    - title: "Tutorial: 5 - Controlling the Tank"
+      url: /minimachine_tut5.html
+      output: web, pdf
+    - title: "Tutorial: 6 - Keeping Score"
+      url: /minimachine_tut6.html
+      output: web, pdf
+    - title: "Tutorial: 7 - Playing your Game"
+      url: /minimachine_tut7.html
+      output: web, pdf
+    - title: "The Graphics System"
+      url: /minimachine_pg_graphics.html
+      output: web, pdf
+    - title: "User Input"
+      url: /minimachine_pg_input.html
+      output: web, pdf
+    - title: "Sound Effects"
+      url: /minimachine_pg_sound.html
+      output: web, pdf
+    - title: "Music"
+      url: /minimachine_pg_music.html
+      output: web, pdf
+    - title: "Exporting Options"
+      url: /minimachine_pg_exporting.html
+      output: web, pdf
+
+
+  - title: Introduction 2
+    output: web, pdf
+    folderitems:
+
+    - title: Overview
+      url: /p2_landing_page.html
+      output: web
+
+  - title: Simple Workflow
+    output: web, pdf
+    folderitems:
+
+    - title: Sample 1
+      url: /p2_sample1.html
+      output: web, pdf
+
+    - title: Sample 2
+      url: /p2_sample2.html
+      output: web, pdf
+
+    - title: Sample 3
+      url: /p2_sample3.html
+      output: web, pdf
+
+    - title: Sample 4
+      url: /p2_sample4.html
+      output: web, pdf
+
+    - title: Sample 5
+      url: /p2_sample5.html
+      output: web, pdf
+
+  - title: Complex Workflow
+    output: web, pdf
+    folderitems:
+
+    - title: Sample 6
+      url: /p2_sample6.html
+      output: web, pdf
+
+    - title: Sample 7
+      url: /p2_sample7.html
+      output: web, pdf
+
+    - title: Sample 8
+      url: /p2_sample8.html
+      output: web, pdf
+
+    - title: Sample 9
+      url: /p2_sample9.html
+      output: web, pdf
+
+    - title: Sample 10
+      url: /p2_sample10.html
+      output: web, pdf
+
+    - title: Sample 11
+      url: /p2_sample11.html
+      output: web, pdf
+
+    - title: Sample 12
+      url: /p2_sample12.html
+      output: web, pdf
+
+    - title: Sample 13
+      url: /p2_sample13.html
+      output: web, pdf
+
+    - title: Sample 14
+      url: /p2_sample14.html
+      output: web, pdf
