@@ -1244,6 +1244,13 @@ h4.panel-title {
     }
 }
 
+@media (min-width:1102px) {
+    #tg-sb-sidebar, ul#mysidebar {
+        width: 270px;
+    }
+}
+
+
 @media (max-width: 990px) {
     #mysidebar {
         margin-top: 30px;
