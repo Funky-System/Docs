@@ -6,6 +6,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+    color: #2f5d93;
+}
+
 span.projectTitle {
     font-weight: bold;
     font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
@@ -23,7 +27,7 @@ ul.nav.navbar-nav {
 }
 
 .navbar-inverse {
-    background-color: #2278cf;
+    background-color: #1d242b;
     border: none;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
 }
@@ -280,7 +284,7 @@ div#toc ul li {
     list-style: square;
 }
 div#toc ul {
-    background-color: whitesmoke;
+    background-color: #eee;
     padding: 5px;
     border-radius: 5px;
     max-width: 300px;
@@ -404,7 +408,7 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav a:hover {
-    color: #1976d2;
+    color: #2F5D93;
 }
 
 .nav > li > a {
@@ -417,7 +421,7 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav li.active > a {
-    color: #1976d2;
+    color: #2f5d93;
 }
 
 .nav li a {
@@ -613,7 +617,7 @@ hr.shaded {
     height: 1px;
     border: 0;
     margin-top: 70px;
-    background: white;
+    background: #ddd;
     width: 100%;
     margin-bottom: 10px;
     box-shadow: none;
@@ -653,7 +657,7 @@ a.fa.fa-envelope-o.mailto {
     font-weight: 600;
 }
 
-h3 {color: #ED1951; font-weight:normal; font-size:130%;}
+h3 {color: black; font-weight:500; font-size:130%;}
 h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
 
 .alert, .callout {

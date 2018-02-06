@@ -10,7 +10,7 @@ permalink: index.html
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <span class="fa-stack fa-5x">
+                    <span class="fa-stack fa-4x">
                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
                           <i class="fa fa-play fa-stack-1x fa-inverse"></i>
                     </span>
@@ -25,7 +25,7 @@ permalink: index.html
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <span class="fa-stack fa-5x">
+                    <span class="fa-stack fa-4x">
                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
                           <i class="fa fa-book fa-stack-1x fa-inverse"></i>
                     </span>
@@ -40,7 +40,7 @@ permalink: index.html
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <span class="fa-stack fa-5x">
+                    <span class="fa-stack fa-4x">
                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
                           <i class="fa fa-th-list fa-stack-1x fa-inverse"></i>
                     </span>
@@ -55,7 +55,7 @@ permalink: index.html
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <span class="fa-stack fa-5x">
+                    <span class="fa-stack fa-4x">
                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
                           <i class="fa fa-microchip fa-stack-1x fa-inverse"></i>
                     </span>
