@@ -41,6 +41,8 @@
     </script>
     <script>
         $(document).ready(function() {
+            $('.scrollbar-macosx').scrollbar();
+
             $("#tg-sb-link").click(function() {
                 $("#tg-sb-sidebar").toggle();
                 $("#tg-sb-content").toggleClass('col-md-9');
@@ -83,6 +85,7 @@
         {% unless page.hide_sidebar %}
             <!-- Sidebar Column -->
             <div class="col-md-3" id="tg-sb-sidebar">
+                <div
                 {% include sidebar.html %}
             </div>
             {% assign content_col_size = "col-md-9" %}

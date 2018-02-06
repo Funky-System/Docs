@@ -40,7 +40,7 @@ feedback_subject_line: Jekyll documentation theme
 feedback_email: tomjoht@gmail.com
 # used as a contact email for the Feedback link in the top navigation bar
 
-# feedback_disable: true
+feedback_disable: true
 # if you uncomment the previous line, the Feedback link gets removed
 
 # feedback_text: "Need help?"
@@ -75,7 +75,7 @@ defaults:
       layout: "page"
       comments: false
       search: true
-      sidebar: home_sidebar
+      sidebar: sidebar
       topnav: topnav
   -
     scope:
@@ -95,16 +95,13 @@ defaults:
       layout: "post"
       comments: true
       search: true
-      sidebar: home_sidebar
+      sidebar: sidebar
       topnav: topnav
 
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- home_sidebar
-- mydoc_sidebar
-- product1_sidebar
-- product2_sidebar
+- sidebar
 - other
 
 description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."

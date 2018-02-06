@@ -1,8 +1,8 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
-- title: Minimachine
-  product: Minimachine
+- title: Funky System
+  product: Funky System
   version: 
   folders:
 
@@ -23,10 +23,10 @@ entries:
     output: web
     folderitems:
     - title: Landing Page
-      url: /minimachine_landing.html
+      url: /landing.html
       output: web
     - title: About the Documentation
-      url: /minimachine_aboutdocs.html
+      url: /aboutdocs.html
       output: web
   
   - title: Getting Started

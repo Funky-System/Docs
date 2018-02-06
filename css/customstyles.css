@@ -1,5 +1,29 @@
 body {
     font-size:15px;
+    background-color: #fafafa;
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+}
+
+span.projectTitle {
+    font-weight: bold;
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+}
+
+ul.nav.navbar-nav {
+    float: none !important;
+}
+
+.navbar {
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+}
+
+.navbar-inverse {
+    background-color: #2278cf;
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
 }
 
 .bs-callout {
@@ -217,19 +241,27 @@ ul#results-container a:hover {
     color: black;
 }
 
+#search-demo-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 
 #search-demo-container a:hover {
     color: black;
 }
 #search-input {
-    padding: .5em;
+    padding: .5em 12px;
     margin-left:20px;
-    width:20em;
+    width:10em;
+    height: 30px;
     font-size: 0.8em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin-top:10px;
+    border-radius: 20px;
+    border: none;
 }
 /* end search */
 
@@ -334,7 +366,7 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav a {
-    color: #333;
+    color: #6e6e6e;
     display: block;
     outline: none;
     /*-webkit-border-radius: 4px;
@@ -350,33 +382,74 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent;
+}
+
 .nav li > a > span:after {
-    content: '\25be';
+    font-family: "FontAwesome";
+    content: '\f054';
+    font-size: 16px;
 }
 .nav li.active > a > span:after {
-    content: '\25b4';
+    font-family: "FontAwesome";
+    content: '\f078';
+    font-size: 16px;
 }
 
-.nav a:hover, .nav li.active > a {
-    background-color: #8D8D8D;
-    color: #f5f5f5;
+.nav > li.active > a {
+    background-color: transparent;
 }
 
-.nav > li.active > a  {
-background-color: #347DBE;
-}
-
-.nav li a {
-    font-size: 12px;
-    line-height: 18px;
-    padding: 2px 10px;
-    background-color: #f1f1f1;
+.nav a:hover {
+    color: #1976d2;
 }
 
 .nav > li > a {
+    text-transform: uppercase;
+    color: #000;
+}
+
+.topnavlinks .nav > li > a {
+    text-transform: none;
+}
+
+.nav li.active > a {
+    color: #1976d2;
+}
+
+.nav li a {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 24px;
+    padding: 2px 10px 2px 30px;
+
+}
+
+.nav > li > a {
     padding: 4px 10px;
+}
+
+#tg-sb-sidebar {
+    box-shadow: 4px 2px 5px -2px rgba(0,0,0,0.2);
+    height: calc(100vh - 40px);
+    overflow-y: scroll;
+    position: fixed;
+    width: 270px;
+    box-sizing: content-box;
+    top: 40px;
+    padding: 0;
+}
+
+.sidebar-container {
+    width: 100%;
+    height: calc(100vh - 40px);
+    padding: 0 15px;
+}
+
+#tg-sb-content {
+    left: 25%;
+    margin-top: 40px;
+    padding-left: 30px;
 }
 
 ul#mysidebar {
@@ -388,15 +461,10 @@ ul#mysidebar {
 }
 
 .nav li.thirdlevel > a {
-    color: #248EC2;
+    color: #1976d2;
     font-weight:bold;
     padding-left:20px;
     background-color: whitesmoke !important;
-}
-
-
-.nav ul li a {
-    background-color: #FAFAFA;
 }
 
 .nav li a {
@@ -404,13 +472,9 @@ ul#mysidebar {
 }
 
 .nav li a:hover {
-    background-color: #8D8D8D;
+    background-color: #DDD;
 }
 
-.nav ul li a {
-    border-top:1px solid whitesmoke;
-    padding-left:10px;
-}
 /* end sidebar */
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
@@ -419,11 +483,6 @@ ul#mysidebar {
 
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
     border-radius: 5px;
-}
-
-span.projectTitle {
-    font-family: Helvetica;
-    font-weight: bold;
 }
 
 .footer {
@@ -548,12 +607,13 @@ hr.faded {
 }
 
 hr.shaded {
-    height: 12px;
+    height: 1px;
     border: 0;
     margin-top: 70px;
     background: white;
     width: 100%;
     margin-bottom: 10px;
+    box-shadow: none;
 }
 
 .fa-6x{font-size:900%;}
@@ -686,6 +746,10 @@ ol.series li {
     list-style-type: decimal;
     margin-left: 40px;
     padding-left: 0px;
+}
+
+.topnavlinks {
+    position: relative;
 }
 
 .siteTagline {
@@ -821,8 +885,23 @@ span.soft {
     color: #c0c0c0;
 }
 
+#mysidebar {
+    margin-top: 40px;
+}
+
+.post-header {
+    position: relative;
+}
+
+.post-title-main {
+    padding-right: 111px;
+    margin-top: 40px;
+}
+
 .githubEditButton {
-    margin-bottom:7px;
+    position: absolute;
+    right: 0;
+    top: 3px;
 }
 
 .endpoint {
@@ -846,22 +925,11 @@ span.soft {
     background-color: whitesmoke;
 }
 
-@media (max-width: 767px) {
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-        color: #444;
-    }
-}
-
-@media (max-width: 990px) {
-    #mysidebar {
-        position: relative;
-    }
-}
 
 @media (min-width: 1000px) {
 
     ul#mysidebar {
-        width: 225px;
+        width: 270px;
     }
 }
 
@@ -932,7 +1000,9 @@ a[href^="http://"]:after, a[href^="https://"]:after {
     font-style: normal;
     display: inline-block;
     text-decoration: none;
-    padding-left: 3px;
+    padding-left: 6px;
+    position: relative;
+    top: 1px;
 }
 
 /* Strip the outbound icon when this class is present */
@@ -1161,40 +1231,28 @@ h4.panel-title {
     margin-top: 0px;
 }
 
-/*set navbar breakpoint so that it converts to hamburger earlier */
+@media (min-width:992px) {
+    #tg-sb-sidebar, ul#mysidebar {
+        width: 220px;
+    }
+}
 
-@media (max-width: 1200px) {
-    .navbar-header {
-        float: none;
+@media (max-width: 990px) {
+    #mysidebar {
+        margin-top: 30px;
     }
-    .navbar-left,.navbar-right {
-        float: none !important;
+    #tg-sb-sidebar {
+        position: relative;
+        height: auto;
+        width: auto;
+        box-shadow: none;
+        background-color: white;
+        padding-bottom: 14px;
+        border: 1px solid #e5e5e5;
     }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-        display:block !important;
+
+    #tg-sb-content {
+        left: auto;
+        margin-top: 60px;
     }
 }
